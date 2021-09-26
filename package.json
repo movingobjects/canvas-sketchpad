@@ -1,0 +1,33 @@
+{
+  "name": "canvas-sketchpad",
+  "productName": "Canvas Sketchpad",
+  "version": "0.1.0",
+  "description": "Sketchpad for canvas drawings",
+  "license": "ISC",
+  "author": "Scott Thiessen (http://movingobjects.io)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/movingobjects/canvas-sketchpad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/movingobjects/canvas-sketchpad/issues"
+  },
+  "scripts": {
+    "dev": "parcel serve './src/index.html' --no-cache --open",
+    "build": "rm -rf './dist'; parcel build './src/index.html' --dist-dir './dist' --no-source-maps",
+    "empty-cache": "rm -rf './.parcel-cache'"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "autoprefixer": "^10.3.6",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.1.0",
+    "postcss-modules": "^3.2.2",
+    "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "paper": "^0.12.15",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
